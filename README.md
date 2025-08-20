@@ -1,5 +1,7 @@
 # Countdown-Timer
 A responsive countdown timer built with HTML, CSS, and JavaScript. Users can set any future date and time with a custom event name, and the app displays the remaining days, hours, minutes, and seconds in real time. Perfect for tracking birthdays, exams, or special occasions.
+## Live demo
+https://kanper0205.github.io/Countdown-Timer/(click on this link,to use the timer)
 # ⏳ Countdown Timer
 
 A simple and responsive countdown timer built with **HTML, CSS, and JavaScript**.  
