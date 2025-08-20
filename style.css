@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.background{
+    position: relative;
+}
+
+.background .img{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .img img {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+}
+
+.text{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    font-size: 3em;
+}
+.type {
+    width: 25vw;
+}
+.type input{
+    min-width: 50px;
+    width: 34vw;
+    min-height: 4vh ;
+}
+.timer{
+    display: flex;
+    flex-direction: row;
+    top: 70%;
+    position: fixed; 
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 6rem;
+    gap: 10vw;
+}
+
+.label{
+    align-items: center;
+    justify-content: center;
+
+}
+.time{
+    translate: 26%;
+    font-weight: bold;
+}
+/* Text input */
+#Type {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 220px;
+  background: #1e293b;
+  color: #f1f5f9;
+  transition: 0.3s ease;
+}
+
+#Type:focus {
+  border: 2px solid #38bdf8;
+  background: #0f172a;
+}
+
+/* Calendar input */
+#userDate {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #1e293b;
+  color: #f1f5f9;
+  transition: 0.3s ease;
+}
+
+#userDate:focus {
+  border: 2px solid #facc15;
+  background: #0f172a;
+}
+
+/* Submit button */
+#button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#button:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: scale(1.05);
+}
+@media(max-height:732px){
+    .timer{
+        top:60%
+    }
+}
+@media(max-height:625px){
+    .timer{
+        top:70%;
+        font-size: 8vh;
+    }
+}
+
+@media (max-width: 1163px) {
+  .timer {
+    font-size: 8vw;
+  }
+}
+
+@media(max-width:600px){
+    .text{
+        font-size: 8vw;
+    }
+    .type{
+        translate: -74%;
+        padding-top: 40px;
+    }
+}
